@@ -1,0 +1,32 @@
+Caffe2 fork by https://github.com/caffe2/caffe2.git
+
+instructions on building caffe2 for Android and OpenGL
+
+# note
+1. for building caffe2, if dont have one, 
+  1.1 offical repo 'git clone https://github.com/caffe2/caffe2.git'
+  1.2 my caffe2 repo 'https://pan.baidu.com/s/1c8oopC'
+2. copy my folder 'lamia_scrips' and 'tutorial_arm64_v7a' inside caffe2
+3. set you ANDROID_NDK using `ANDROID_NDK = balabala` or `export ANDROID_NDK=balabala`
+4. be carefule of line end symbol cause you may meet the error saying 'build_android.sh \r', solve with converting Windows(CRLF) to Unix(LF)
+
+# build
+1. cd caffe2
+2. bash ./lamia_scripts/build.sh  # and library will be installed in ./install
+3. bash ./lamia_scripts/mv_library.sh  # to move library installed just now to tutorial folder
+
+#usage
+3. cd tutorial_arm64_v7a
+4. make  
+
+# note
+1. executable is 'intro_in_arm' which should run under an Android device with OpenGL
+2. use adb to push 'intro_in_arm' to your Android device and gain the permission for running
+3. intro_in_arm.{.o, .o.d} are useless, just ignore
+4. on how to use OpenGL, see 'intro_gl.cc', 'intro.cc' is for cpu and replace TensorCPU as TensorCUDA to support Nvidia GPUs
+5. prebuilt caffe2-opengl-android library on the baidu cloud 'https://pan.baidu.com/s/1gfdBV2b'
+
+Hope it helps
+
+
+- laMia
