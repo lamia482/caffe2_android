@@ -7,7 +7,7 @@ instructions on building caffe2 for Android and OpenGL
   1.1 offical repo 'git clone https://github.com/caffe2/caffe2.git'
   1.2 my caffe2 repo 'https://pan.baidu.com/s/1c8oopC'
 2. copy my folder 'lamia_scrips' and 'tutorial_arm64_v7a' inside caffe2
-3. set you ANDROID_NDK using `ANDROID_NDK = balabala` or `export ANDROID_NDK=balabala`
+3. set you ANDROID_NDK using `ANDROID_NDK=balabala` or `export ANDROID_NDK=balabala`
 4. be carefule of line end symbol cause you may meet the error saying 'build_android.sh \r', solve with converting Windows(CRLF) to Unix(LF)
 
 # build
