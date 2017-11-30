@@ -4,7 +4,7 @@ instructions on building caffe2 for Android and OpenGL
 
 # note
 1. for building caffe2, if dont have one, 
-  1.1 offical repo 'git clone https://github.com/caffe2/caffe2.git'
+  1.1 offical repo 'git clone --recursive https://github.com/caffe2/caffe2.git'
   1.2 my caffe2 repo 'https://pan.baidu.com/s/1c8oopC'
 2. copy my folder 'lamia_scrips' and 'tutorial_arm64_v7a' inside caffe2
 3. set you ANDROID_NDK using `ANDROID_NDK=balabala` or `export ANDROID_NDK=balabala`
